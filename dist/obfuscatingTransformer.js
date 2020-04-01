@@ -70,7 +70,8 @@ function obfuscatingTransformer(_a) {
                 if (otherOptions.emitObfuscatedFiles) {
                     var emitDir = path.dirname(props.filename);
                     var filename = extendFileExtension_1.extendFileExtension(path.basename(props.filename), "obfuscated");
-                    // TODO kmeath fix
+                    // TODO kmeath find fix
+                    // Uploaded to https://github.com/mobiletranegit/mobiletranegit-react-native-obfuscating-transformer
                     // https://github.com/javascript-obfuscator/react-native-obfuscating-transformer/issues/28
                     // fs.writeFileSync(path.join(emitDir, filename), code);
                     fs.writeFileSync(path.join(emitDir, filename), obfuscateCode_1.obfuscateCode(code, obfuscatorOptions));
