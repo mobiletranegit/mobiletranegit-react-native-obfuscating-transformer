@@ -1,0 +1,107 @@
+{
+  "_args": [
+    [
+      "react-native-obfuscating-transformer@1.0.0",
+      "/Users/irjeli/Desktop/mobileservices-gitrepo"
+    ]
+  ],
+  "_development": true,
+  "_from": "react-native-obfuscating-transformer@1.0.0",
+  "_id": "react-native-obfuscating-transformer@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-DrKt9ZxhxZfwDUM7M6OnTThc5lQd80sVMyVqV2fFfVRbZGYt8lnXGGd/i5HAlejkieJ9SQsffoYa6rfWA33rYw==",
+  "_location": "/react-native-obfuscating-transformer",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-obfuscating-transformer@1.0.0",
+    "name": "react-native-obfuscating-transformer",
+    "escapedName": "react-native-obfuscating-transformer",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-obfuscating-transformer/-/react-native-obfuscating-transformer-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "/Users/irjeli/Desktop/mobileservices-gitrepo",
+  "author": {
+    "name": "David Sheldrick"
+  },
+  "bugs": {
+    "url": "https://github.com/ds300/react-native-obfuscating-transformer/issues"
+  },
+  "dependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/babel-core": "^6.25.3",
+    "@types/babel-generator": "^6.25.1",
+    "@types/node": "^9.3.0",
+    "@types/semver": "^5.4.0",
+    "app-root-path": "^2.0.1",
+    "babel-generator": "^6.26.1",
+    "javascript-obfuscator": "^0.13.0",
+    "jju": "^1.3.0",
+    "semver": "^5.4.1",
+    "source-map": "^0.6.1"
+  },
+  "description": "Obfuscating transformer for react-native",
+  "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "babel-preset-react-native": "^1.9.1",
+    "husky": "^0.13.3",
+    "jest": "^22.0.6",
+    "lint-staged": "^3.4.1",
+    "metro": "^0.45.6",
+    "metro-bundler": "^0.22.1",
+    "np": "^4.0.2",
+    "prettier": "^1.10.2",
+    "react-native": "^0.57.1",
+    "ts-jest": "^22.0.1",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2"
+  },
+  "homepage": "https://github.com/ds300/react-native-obfuscating-transformer#readme",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(javascript-obfuscator)/)"
+    ],
+    "moduleNameMapper": {
+      "javascript-obfuscator": "<rootDir>/node_modules/javascript-obfuscator/index.ts"
+    },
+    "testRegex": "src/.*(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ]
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "**/*.ts": [
+      "prettier --no-semi --trailing-comma all"
+    ]
+  },
+  "main": "dist/index.js",
+  "name": "react-native-obfuscating-transformer",
+  "peerDependencies": {
+    "react-native": ">=0.45.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ds300/react-native-obfuscating-transformer.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "precommit": "tsc && lint-staged",
+    "test": "jest"
+  },
+  "typings": "dist/index.d.ts",
+  "version": "1.0.0"
+}
